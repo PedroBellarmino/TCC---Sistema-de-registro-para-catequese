@@ -1,0 +1,143 @@
+<?php
+
+include('../php/proteger_login_adm.php');
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Links Bootstrap -->
+
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Titulo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+</head>
+<link rel="shortcut icon" href="../img/cruz.ico.png">
+
+<!-- Navbar -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <br>
+            <a href="#" class="navbar-brand h1 mb-1">
+                <img src="../img/logo.png" width="149" href="homepage.html" >
+            </a>
+            
+
+            <div data-target="#navbarsite"></div>
+
+            <div class="collapse navbar-collapse" id="navbarsite">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="">Início</a>
+
+                    <li class="nav-item dropdown">
+                        <a href="../php/lista_aluno.php" class="nav-link" id="navdrop">Alunos</a>
+                        <div class="dropdown-menu">
+                        </div>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navdrop">Turmas</a>
+                            <div class="dropdown-menu">
+                                <a href="cadastrar_turma.html" class="dropdown-item">Cadastrar turma</a>
+                                <a href="../php/lista_turma.php" class="dropdown-item">Visualizar</a>
+                            </div>
+
+                            <li class="nav-item"></li>
+                            <a class="nav-link" href="../php/lista_usuario_adm.php" >Usuários</a>
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="../php/lista_adm.php" >Administradores</a>
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="../php/logout_adm.php" >Sair</a>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    
+
+    <!-- Carousel -->  
+    <div id="carouselSite" class="carousel slide m-0 p-0" data-ride="carousel" data-interval="4500">
+        <!-- ... (restante do código) ... -->
+     
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carouselSite" data-slide-to="0"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/1.png" class="img-fluid d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/2.png" class="img-fluid d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/3.png" class="img-fluid d-block">
+            </div>
+        </div>
+
+        <a href="#carouselSite" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a href="#carouselSite" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-17 text-center my-5">
+                <h1 class="display-3">
+                    <i class=""></i>
+                    <h>Bem-vindo Administrador!</h>
+                    
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>

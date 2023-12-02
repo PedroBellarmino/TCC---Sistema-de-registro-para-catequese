@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Links Bootstrap -->
+
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Titulo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de turmas</title>
+</head>
+<link rel="shortcut icon" href="../img/cruz.ico.png">
+
+<!-- Navbar -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <br>
+            <a href="#" class="navbar-brand h1 mb-1">
+                <img src="../img/logo.png" width="149" href="homepage.html" >
+            </a>
+            
+
+            <div data-target="#navbarsite"></div>
+
+            <div class="collapse navbar-collapse" id="navbarsite">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="homepage_adm.php">Início</a>
+
+                    <li class="nav-item dropdown">
+                        <a href="../php/lista_aluno.php" class="nav-link" id="navdrop">Alunos</a>
+                        <div class="dropdown-menu">
+                        </div>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navdrop">Turmas</a>
+                            <div class="dropdown-menu">
+                                <a href="cadastrar_turma.html" class="dropdown-item">Cadastrar turma</a>
+                                <a href="../php/lista_turma.php" class="dropdown-item">Visualizar</a>
+                            </div>
+
+                            <li class="nav-item"></li>
+                            <a class="nav-link" href="../php/lista_usuario_adm.php" >Usuários</a>
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="../php/lista_adm.php" >Administradores</a>
+
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="cadastrar_adm.html" >Sair</a>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+        </div>
+    </nav>
+    
+    <!-- Cadastro -->
+    <div class="container vh-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-md-8">
+                <div style="margin-top: -300px;"></div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Formulário de cadastro de turmas:</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="../php/cadastrar_turma.php" method="post">
+    
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome">Turma:</label>
+                                    <input type="text" id="nome" placeholder="Digite o nome da turma" class="form-control rounded-pill" name="nome_tur" required />
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="nome">Horário:</label>
+                                    <input type="text" id="nome" placeholder="Digite a hora que a turma vai iniciar" class="form-control rounded-pill" name="horario_tur" required />
+                                </div>
+                            </div>
+                            
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="sala">Sala:</label>
+                                    <input type="text" id="sala" placeholder="Digite o nome da sala" class="form-control rounded-pill" name="sala_tur" required />
+                                </div>
+                            
+                                <div class="form-group col-md-6">
+                                    <label for="faixa_etaria">Faixa etária:</label>
+                                    <input type="text" id="faixa_etaria" placeholder="Digite a faixa etária da turma" class="form-control rounded-pill" name="faixa_tur" required />
+                                </div>
+                            </div>
+                            
+
+                            <div class="form-group">
+                                <label for="status_tur">Status:</label>
+                                <select class="form-select rounded-pill" name="status_tur" required>
+                                    <option value="" disabled selected>Selecione o status da turma</option>
+                                    <option value="ativa">ativa</option>
+                                </select>
+                            </div>
+    
+                        <div class="text-center" style="margin-top: 40px;">
+                            <button  href="homepage_adm.html" type="submit" class="btn btn-success px-5 rounded-pill">Cadastrar turma</button>
+                            <a href="homepage_adm.html" class="btn btn-success px-5 rounded-pill">Voltar</a>
+                        </div>                        
+                            </div>
+                        </form>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>          
+    </body>
+
+    </html>
